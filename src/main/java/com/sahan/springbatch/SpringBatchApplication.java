@@ -25,6 +25,7 @@ public class SpringBatchApplication implements CommandLineRunner {
 		SpringApplication.run(SpringBatchApplication.class, args);
 	}
 
+
 	@Override
 	public void run(String... args) throws Exception {
 		JobParameters params = new JobParametersBuilder().addString("JobID", String.valueOf(System.currentTimeMillis()))
